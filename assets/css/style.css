@@ -1,3 +1,12 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+}
+
 body {
-    background: red;
+    background: antiquewhite;
+}
+
+header {
+    background-color: rebeccapurple;
+    color: #fff;
 }
