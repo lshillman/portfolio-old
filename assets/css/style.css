@@ -10,3 +10,23 @@ header {
     background-color: rebeccapurple;
     color: #fff;
 }
+
+#projects > div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: aqua;
+}
+
+#projects > div > :first-child {
+    flex-basis:100%;
+}
+
+#projects > div > section {
+    flex-basis: 50%;
+}
+
+#anglo-piano {
+}
