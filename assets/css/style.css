@@ -18,14 +18,18 @@ header {
 
 .project {
     background-color: aqua;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 2rem;
+    margin: 1rem;
 }
 
 #projects > div > :first-child {
-    flex-basis:100%;
+    flex-basis:calc(100% - 2rem);
 }
 
 #projects > div > section {
-    flex-basis: 50%;
+    flex-basis: calc(50% - 2rem);
 }
 
 #anglo-piano {
