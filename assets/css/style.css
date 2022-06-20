@@ -17,13 +17,18 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+}
+
+header div {
     display:flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
 }
 
 header h1 {
-    margin: 0 0 0 1rem;
+    margin: 0;
     background-color: brown;
     line-height: 4rem;
 }
@@ -31,7 +36,7 @@ header h1 {
 nav ul,
 footer ul {
     list-style: none;
-    margin: 0 1rem 0 0;
+    margin: 0 0 0 0;
 }
 
 nav ul li,
@@ -64,6 +69,17 @@ main {
     display: flex;
 }
 
+#about h2,
+#projects h2,
+#contact h2 {
+    flex: 0 0 9rem;
+    background-color: aqua;
+}
+
+#about div {
+    margin-left: 1rem;
+}
+
 #projects {
     display: flex;
 }
@@ -71,7 +87,6 @@ main {
 #projects > div {
     display: flex;
     flex-wrap: wrap;
-    border-left: 5px solid rebeccapurple;
 }
 
 .project {
