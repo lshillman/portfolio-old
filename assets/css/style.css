@@ -33,14 +33,12 @@ header h1 {
     line-height: 4rem;
 }
 
-nav ul,
-footer ul {
+nav ul {
     list-style: none;
     margin: 0 0 0 0;
 }
 
-nav ul li,
-footer ul li {
+nav ul li {
     display:inline-block;
 }
 
@@ -91,7 +89,7 @@ main {
 
 .project {
     background-color: aqua;
-    border: 2px solid red;
+    border: 0.5rem solid red;
     box-sizing: border-box;
     padding: 2rem;
     margin: 1rem;
@@ -115,12 +113,39 @@ main {
     display:flex;
 }
 
+footer {
+    text-align: center;
+}
 
 /*
     Note: I subscribe to design-specific breakpoints rather than device-specific ones. The breakpoints below are the ones that seem to work best for this design.
 */
 
+
+@media only screen and (max-width: 750px) {
+
+    main > section {
+        flex-wrap: wrap;
+    }
+
+    #about h2,
+    #projects h2,
+    #contact h2 {
+        flex-basis: 100%;
+        background-color: blue;
+        text-align: center;
+    }
+
+}
+
+
+
 @media only screen and (max-width: 600px) {
+
+    main > section {
+        flex-wrap: wrap;
+    }
+
     #projects > div > section {
         flex-basis: calc(100% - 2rem);
     }
