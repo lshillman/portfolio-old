@@ -13,6 +13,39 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0 0 0 1rem;
+    background-color: brown;
+    line-height: 4rem;
+}
+
+nav ul,
+footer ul {
+    list-style: none;
+    margin: 0 1rem 0 0;
+}
+
+nav ul li,
+footer ul li {
+    display:inline-block;
+}
+
+nav ul li a {
+    display:inline-block;
+    color:#fff;
+    background-color: brown;
+    height:4rem;
+    line-height: 4rem;
+    padding: 0 1rem 0 1rem;
+}
+
+#about {
+    margin-top: 8rem;
 }
 
 #projects > div {
