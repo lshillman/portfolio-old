@@ -54,13 +54,24 @@ nav ul li a:hover {
     background-color: #000;
 }
 
+main {
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
 #about {
     margin-top: 8rem;
+    display: flex;
+}
+
+#projects {
+    display: flex;
 }
 
 #projects > div {
     display: flex;
     flex-wrap: wrap;
+    border-left: 5px solid rebeccapurple;
 }
 
 .project {
@@ -83,6 +94,10 @@ nav ul li a:hover {
 #anglo-piano {
     background: url('../images/anglo-piano.jpg') center/cover;
     /* background-size: cover; */
+}
+
+#contact {
+    display:flex;
 }
 
 
