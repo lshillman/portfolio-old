@@ -9,6 +9,10 @@ body {
 header {
     background-color: rebeccapurple;
     color: #fff;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 #projects > div {
