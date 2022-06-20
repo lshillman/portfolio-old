@@ -36,6 +36,7 @@ header h1 {
 nav ul {
     list-style: none;
     margin: 0 0 0 0;
+    padding:0;
 }
 
 nav ul li {
@@ -118,7 +119,7 @@ footer {
 }
 
 /*
-    Note: I subscribe to design-specific breakpoints rather than device-specific ones. The breakpoints below are the ones that seem to work best for this design.
+    Note: I prefer design-specific breakpoints rather than device-specific ones. The breakpoints below are the ones that seem to work best for this design.
 */
 
 
@@ -141,6 +142,36 @@ footer {
 
 
 @media only screen and (max-width: 600px) {
+
+    header div {
+        display:flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        margin: 0 auto 0 auto;
+    }
+
+    nav {
+        flex-basis: 100%;
+    }
+
+    nav ul {
+        width:100%;
+        display:flex;
+        background-color: aqua;
+
+    }
+
+    nav ul li {
+        flex-basis: 33.333%;
+        background-color: cadetblue;
+        outline: 1px solid magenta;
+        text-align: center;
+
+    }
+
+    nav ul li a {
+        width:70%;
+    }
 
     main > section {
         flex-wrap: wrap;
