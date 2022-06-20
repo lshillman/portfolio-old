@@ -26,6 +26,7 @@ header {
 
 #projects > div > :first-child {
     flex-basis:calc(100% - 2rem);
+    height: 400px;
 }
 
 #projects > div > section {
@@ -33,4 +34,17 @@ header {
 }
 
 #anglo-piano {
+    background: url('../images/anglo-piano.jpg') center/cover;
+    /* background-size: cover; */
+}
+
+
+/*
+    Note: I subscribe to design-specific breakpoints rather than device-specific ones. The breakpoints below are the ones that seem to work best for this design.
+*/
+
+@media only screen and (max-width: 600px) {
+    #projects > div > section {
+        flex-basis: calc(100% - 2rem);
+    }
 }
