@@ -18,3 +18,4 @@ I'm a fan of design-specific breakpoints (as opposed to device-specific ones), s
 
 I think I was fairly successful achieving the layout, though admittedly the code is not as elegant as it could be in some places. I'll be iterating on it as I have time.
 
+https://user-images.githubusercontent.com/5232938/174913007-732d32c3-605b-443e-8f6c-f34987da36d0.mov
