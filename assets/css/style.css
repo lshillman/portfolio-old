@@ -163,6 +163,22 @@ main {
     /* background-size: cover; */
 }
 
+#berkmo {
+    background: url('../images/berkmo.jpg') center/cover;
+}
+
+#csscheatsheet {
+    background: url('../images/csscheatsheet.jpg') center/cover;
+}
+
+#refactor {
+    background: url('../images/horiseon.jpg') center/cover;
+}
+
+#scheduler {
+    background: url('../images/scheduler.jpg') center/cover;
+}
+
 #contact {
     display:flex;
 }
@@ -204,6 +220,7 @@ footer {
         flex-basis: 100%;
         background-color: var(--sectionborder);
         text-align: center;
+        border-right: none;
     }
 
 }
