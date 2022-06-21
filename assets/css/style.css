@@ -5,6 +5,9 @@
     --sectionborder: #7AE582;
     --lighttext: #fff;
     --navbg: #00A5CF;
+
+/* Note: I know this isn't the prettiest theme. For this project, I wanted to focus on implementing the layout shown in the example portfolio. I'll revisit later and make it a bit sleeker. */
+
 }
 
 * {
@@ -76,6 +79,8 @@ main {
     display: flex;
 }
 
+/* Page sections appear on their own column in this desktop layout */
+
 #about h2,
 #projects h2,
 #contact h2 {
@@ -140,11 +145,13 @@ main {
     margin-top: 0.5rem;
 }
 
+/* I had to refactor this 3 times and am still not satisfied with it; I know it could be done more elegantly but I'll come back to it later (today is June 21 2022) */
+
 #projects > div > :first-child {
-    flex-basis:calc(100% - 2rem);
+    flex-basis:calc(100% - 2rem); /* TODO: come back and see if I can use flex-gap instead of calc */
 }
 
-#projects > div > :first-child > .project {
+#projects > div > :first-child > .project { /* I was trying to challenge myself to select mostly based on hierarchy but I should have just given everything classes */
     width: 100%;
     height: 400px;
 }
@@ -157,6 +164,8 @@ main {
     width: calc(100% - 2rem);
     height: 150px;
 }
+
+/* For the time being these are background images but I should probably make them normal img elements at some point. */
 
 #anglo-piano {
     background: url('../images/anglo-piano.jpg') center/cover;
@@ -200,11 +209,11 @@ footer {
 }
 
 /*
-    Note: I prefer design-specific breakpoints rather than device-specific ones. The breakpoints below are the ones that seem to work best for this design.
+    I prefer design-specific breakpoints rather than device-specific ones. The breakpoints below are the ones that seem to work best for this design.
 */
 
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 750px) { /* Main page is single column; non-featured projects are 2 columns */
 
     main > section {
         flex-wrap: wrap;
@@ -223,11 +232,15 @@ footer {
         border-right: none;
     }
 
+    #contact ul li {
+        margin: 0 0 0 -1.5rem;
+        flex-basis: 100%;
+        padding: 0 0 1.5rem 0;
+    }
+
 }
 
-
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) { /* mobile is entirely a single-column layout */
 
     header div {
         display:flex;
@@ -235,6 +248,8 @@ footer {
         flex-wrap: wrap;
         margin: 0 auto 0 auto;
     }
+
+    /* TODO: collapse the nav menu into a hamburger button with JS */
 
     nav {
         flex-basis: 100%;
