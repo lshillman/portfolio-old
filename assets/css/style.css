@@ -37,7 +37,7 @@ header div {
 }
 
 header h1 {
-    margin: 0;
+    margin: 0 0 0 0;
     line-height: 4rem;
 }
 
@@ -132,7 +132,7 @@ main {
     height: 400px;
 }
 
-#projects > div > section {
+#projects > div > div {
     flex-basis: calc(50% - 2rem);
 }
 
