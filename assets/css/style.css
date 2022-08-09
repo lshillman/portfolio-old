@@ -176,6 +176,10 @@ main {
     background: url('../images/berkmo.jpg') center/cover;
 }
 
+#onlyfarms {
+    background: url('../images/onlyfarms.jpg') center/cover;
+}
+
 #csscheatsheet {
     background: url('../images/csscheatsheet.jpg') center/cover;
 }
