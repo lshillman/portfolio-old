@@ -1,6 +1,6 @@
 # portfolio
 
-A small, responsive [site](https://lshillman.github.io/portfolio/) to showcase my projects. Very much a work in progress, and currently limited to projects where I'm a developer. For UX and HCI research/design projects, see [lukehillman.net](https://lukehillman.net).
+A small, responsive [site](https://lshillman.github.io/portfolio-old/) to showcase my projects. Very much a work in progress, and currently limited to projects where I'm a developer. For UX and HCI research/design projects, see [lukehillman.net](https://lukehillman.net).
 
 I was trying to use this project to get acclimated to using flexbox. That was a success, but left very little time to spend on visual flair. I think that's okay.
 
